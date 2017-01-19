@@ -1,0 +1,56 @@
+$button_bg: #ff8e41
+$button_border: 1px solid #e1762e
+$prof_bg_color: #c4ebf6
+$prof_color: #2596ca
+$special_price_bg: #4fb427
+$form_bg: #23a8d1
+$text: 'Helvetica Neue Regular', sans-serif
+$roboto: 'Roboto', sans-serif
+
+body
+  background: #FFF
+  font-size: 16px
+  line-height: 1.4
+  font-family: $roboto
+  color: #333 
+a 
+	text-decoration: none
+	color: #2596ca
+
+.wrapper
+	position: relative
+	max-width: 1065px
+	margin: 0 auto 
+	+clr
+
+.button
+	display: block
+	width: 131px
+	height: 32px
+	border-radius: 5px
+	border: $button_border
+	background-color: $button_bg
+	color: #ffffff
+	font-size: 18px
+	font-weight: 700
+	line-height: 24px
+	&.button_big
+		font-size: 20px 
+		width: 305px
+		height: 70px
+		margin: 39px auto 158px
+
++r(1064)
+	.wrapper
+		padding: 0 5px
+		
++r(800)
+	.button.button_big
+		margin: 15px auto
++r(500)
+	.wrapper
+		padding: 0
+	.button.button_big
+		width: auto
+		height: auto
+		padding: 10px 20px

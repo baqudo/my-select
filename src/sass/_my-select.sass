@@ -1,0 +1,93 @@
+$width: 300px
+
+.select
+	display: inline-block
+	margin: 20px
+	// position: relative
+	width: $width
+	// border-radius: 25px
+	// height: 250px 
+	overflow: hidden
+.select__bar
+	position: relative
+	cursor: pointer
+	margin-top: 7px 
+	width: $width
+	border-radius: 5px
+	background-color: #ffffff
+	padding: 0 15px
+	line-height: 45px
+	height: 45px 
+	color: #b7c3c7
+	font-size: 1.125em
+	font-weight: 400
+	border: 1px solid #b7c3c7
+	// border-bottom: 1px solid #fff
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: 40%
+		right: 15px  
+		border-bottom: 2px solid #777
+		border-right: 2px solid #777
+		width: 10px
+		height: 10px
+		background: transparent
+		transform: rotate(45deg)
+	&.selected
+		color: #000
+	&.is-active
+		border-radius: 5px 5px 0 0
+		border-bottom: 1px solid #cbd3d6
+		&:after
+			top: 18px 
+			transform: rotate(225deg)
+		
+.my-select
+	display: none
+
+.select__dropdown 
+	position: absolute
+	z-index: 5 
+	display: none
+	width: $width
+	max-height: 200px
+	overflow: auto
+	border: 1px solid #b7c3c7
+	border-top: none 
+	background-color: #ffffff
+	color: #b7c3c7
+	font-size: 0.875em
+	font-weight: 400
+	padding: 15px 0
+	&.is-active
+		color: #000
+		border-radius: 0 0 5px 5px
+	
+	.option
+		color: #333 
+		position: relative
+		border-left: 3px solid transparent
+		display: block
+		padding: 0 15px
+		line-height: 2.1em
+		&:hover
+			cursor: pointer
+			background-color: #eee
+		&.is-active
+			left: -6px 
+			&:before
+				content: ""
+				position: relative
+				top: -2px 
+				left: -6px 
+				display: inline-block
+				width: 6px 
+				height: 9px 
+				border-right: 2px solid #e1762e
+				border-bottom: 2px solid #e1762e
+				transform: rotate(45deg)
+	&:last-child
+		padding-bottom: 20px  
+

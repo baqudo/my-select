@@ -1,0 +1,345 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+body {
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #2596ca;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1065px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+
+.wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.button {
+  display: block;
+  width: 131px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #e1762e;
+  background-color: #ff8e41;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button.button_big {
+  font-size: 20px;
+  width: 305px;
+  height: 70px;
+  margin: 39px auto 158px;
+}
+
+.block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom__form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: 6px solid #ff8e41;
+  border-bottom: 6px solid #ff8e41;
+  padding: 10px 0 15px;
+}
+
+.bottom__form .form__item {
+  border: 1px solid #e4ebed;
+}
+
+.bottom__form .form__legend {
+  color: #c7c7c7;
+}
+
+.bottom__form .form .select__bar {
+  border: 1px solid #e4ebed;
+}
+
+.bottom__form .form .button_big {
+  margin-bottom: 67px;
+}
+
+.bottom__form .telephone {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bottom__form .telephone__text {
+  font-size: 1.3125em;
+  font-weight: 300;
+}
+
+.bottom__form .telephone__number {
+  margin-top: 5px;
+  font-size: 2.5em;
+}
+
+.bottom__form .select__dropdown {
+  border: 1px solid #e4ebed;
+  border-top: none;
+}
+
+.select {
+  display: inline-block;
+  margin: 20px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.select__bar {
+  position: relative;
+  cursor: pointer;
+  margin-top: 7px;
+  width: 300px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 0 15px;
+  line-height: 45px;
+  height: 45px;
+  color: #b7c3c7;
+  font-size: 1.125em;
+  font-weight: 400;
+  border: 1px solid #b7c3c7;
+}
+
+.select__bar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  border-bottom: 2px solid #777;
+  border-right: 2px solid #777;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.select__bar.selected {
+  color: #000;
+}
+
+.select__bar.is-active {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #cbd3d6;
+}
+
+.select__bar.is-active:after {
+  top: 18px;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.my-select {
+  display: none;
+}
+
+.select__dropdown {
+  position: absolute;
+  z-index: 5;
+  display: none;
+  width: 300px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #b7c3c7;
+  border-top: none;
+  background-color: #ffffff;
+  color: #b7c3c7;
+  font-size: 0.875em;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.select__dropdown.is-active {
+  color: #000;
+  border-radius: 0 0 5px 5px;
+}
+
+.select__dropdown .option {
+  color: #333;
+  position: relative;
+  border-left: 3px solid transparent;
+  display: block;
+  padding: 0 15px;
+  line-height: 2.1em;
+}
+
+.select__dropdown .option:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.select__dropdown .option.is-active {
+  left: -6px;
+}
+
+.select__dropdown .option.is-active:before {
+  content: "";
+  position: relative;
+  top: -2px;
+  left: -6px;
+  display: inline-block;
+  width: 6px;
+  height: 9px;
+  border-right: 2px solid #e1762e;
+  border-bottom: 2px solid #e1762e;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.select__dropdown:last-child {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1064px) {
+
+  .wrapper {
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .bottom__form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+  }
+
+  .bottom__form .form .button_big {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .button.button_big {
+    margin: 15px auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .button.button_big {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+
+  .bottom__form .telephone__text {
+    font-size: 1em;
+  }
+
+  .bottom__form .telephone__number {
+    font-size: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
